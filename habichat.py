@@ -5,21 +5,18 @@ KEY = ''
 
 HEADERS = {'Content-Type' : 'application/json', 'x-api-user' : USER, 'x-api-key' : KEY}
 print('[1] Chat drużynowy')
-print('[2] Karczma (jeszcze bugniete ;<)')
-print('[3] Runner\'s Edge')
-print('[4] Linux')
-print('[5] Polska')
+print('[2] Runner\'s Edge')
+print('[3] Linux')
+print('[4] Polska')
 
 GROUPNAME = input('Podaj numer grupy ')
 if GROUPNAME == '1':
     GROUPNAME = 'party'
 elif GROUPNAME == '2':
-    GROUPNAME = 'tavern'
-elif GROUPNAME == '3':
     GROUPNAME = 'a35aa006-b42d-4b27-ab0c-8864b087c6f2'
-elif GROUPNAME == '4':
+elif GROUPNAME == '3':
     GROUPNAME = '1df40f0f-b758-45b3-8ed8-8916f85577eb'
-elif GROUPNAME == '5':
+elif GROUPNAME == '4':
     GROUPNAME = '006c7f68-e07a-4a56-9dcf-fd64c90e3ef4'
 else:
     print('Nie podałeś dobrego numeru grupy!')
