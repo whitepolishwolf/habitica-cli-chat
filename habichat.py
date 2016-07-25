@@ -42,10 +42,10 @@ if confirmation == '1':
 elif confirmation == '2':
     MSGTEXT = input('Co chciałbyś napisać? ')
     MSGDICT = {'message' : MSGTEXT}
-    MSGSEND = requests.post(URL, headers=HEADERS, json=msgdict)
+    MSGSEND = requests.post(URL, headers=HEADERS, json=MSGDICT)
     MSGSEND
     print('Wiadomość została wysłana!')
-    GETMSG = requests.get(url, headers=HEADERS).json()
+    GETMSG = requests.get(URL, headers=HEADERS).json()
     print('\033[92m' + GETMSG['data'][0]['user'] + '\033[0m', end=": ")
     print(GETMSG['data'][0]['text'])
 else:
